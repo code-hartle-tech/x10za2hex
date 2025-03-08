@@ -7,7 +7,7 @@ The [x10za2hex](): **Xtensa To Hex Converter** is a command-line tool designed t
 ## 🎯 Key Features
 
 - ✅ Converts **Xtensa assembly instructions** into **hex encoding**.
-- ✅ Displays output in a **colorized, auto-expanding table** using Rich.
+- ✅ Displays output in a **colorized table** using Rich.
 - ✅ Supports **both optimized and unoptimized** instruction formats (e.g., `movi.n`, `_movi`).
 - ✅ Handles **various instruction types**, including register operations, memory loads/stores, and jumps.
 - ✅ Works seamlessly with **l32i** and its compressed counterpart **l32i.n**.
@@ -56,7 +56,7 @@ python x10za2hex.py "movi a3, 10"
 
 To prevent automatic assembler optimizations, use an underscore (`_`) before an instruction:
 ```sh
-python x10za2hex.py "_movi a3, 300"
+python x10za2hex.py "_movi a3, 10"
 ```
 
 ### 📌 Example Output
@@ -89,7 +89,7 @@ If you encounter any issues, check the following:
 - ❌ **Syntax Errors**:
   - Verify that the instruction format follows Xtensa’s ISA documentation.
 - ❌ **Unexpected Output**:
-  - Refer to the [Xtensa®️ Instruction Set Architecture (ISA) Summary](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html).
+  - Refer to the [Xtensa®️ Instruction Set Architecture (ISA) Summary](https://www.cadence.com/content/dam/cadence-www/global/en_US/documents/tools/silicon-solutions/compute-ip/isa-summary.pdf).
 
 ## 📜 License
 
